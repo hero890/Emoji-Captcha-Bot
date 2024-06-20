@@ -30,7 +30,7 @@ CaptchaDB = {}
 
 @CaptchaBot.on_message(filters.command("start"))
 async def start_handler(_, event: Message):
-    await event.reply_text("Hi, I am captcha bot by @AbirHasan2005.")
+    await event.reply_text("Hi, I am captcha bot by @hero_botss.")
 
 
 @CaptchaBot.on_chat_member_updated()
