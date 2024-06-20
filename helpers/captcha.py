@@ -25,7 +25,7 @@ def make_captcha(id: str):
     captcha_answer = "Answer:"
     for i in range(len(emoji_names)):
         captcha_answer += f" {emoji_names[i]}"
- def make_captcha(id):
+await def make_captcha(id):
     # Ensure the directory exists
     cache_dir = "helpers/cache/"
     if not os.path.exists(cache_dir):
