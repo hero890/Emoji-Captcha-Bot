@@ -25,12 +25,4 @@ def make_captcha(id: str):
     captcha_answer = "Answer:"
     for i in range(len(emoji_names)):
         captcha_answer += f" {emoji_names[i]}"
-await def make_captcha(id):
-    # Ensure the directory exists
-    cache_dir = "helpers/cache/"
-    if not os.path.exists(cache_dir):
-        os.makedirs(cache_dir)
-    
-    background.save(f"{cache_dir}{id}.png", "PNG", quality=100)
-    return data, f"{cache_dir}{id}.png"
     return captcha_answer, f"helpers/cache/{id}.png"
